@@ -16,25 +16,29 @@
 
 .item-1 {
   /*justify-self: start;*/
-  align-self: start;
+  /* align-self: start; */
+  place-self: start start;
   background-color: orange;
 }
 
 .item-2 {
   /* justify-self: center; */
-  align-self: center;
+  /* align-self: center; */
+  place-self: center stretch;
   background-color: red;
 }
 
 .item-3 {
   /* justify-self: stretch; */
-  align-self: stretch;
+  /* align-self: stretch; */
+  place-self: start end;
   background-color: green;
 }
 
 .item-4 {
   /* justify-self: end; */
-  align-self: end;
+  /* align-self: end; */
+  place-self: center end;
   background-color: blue;
 }
 /*
