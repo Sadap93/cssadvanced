@@ -43,50 +43,73 @@ table {
 }
 /*------------------------------------------------*/
 .container {
+  background-color: #F5F5DC;
   display: flex;
 }
-
-.box {
-  width: 200px;
-  height: 200px;
+.regular{
+  flex-grow: 1;
 }
-
-.blue {
-  background-color: #0000FF;
-  order: 5;
+.other-regular{
+  flex-grow: 1;
 }
-
-.green {
-  background-color: #008000;
-  order: 4;
+.tiny{
+  flex-grow: 3;
 }
-
-.indigo {
-  background-color: #4B0082;
-  order: 6;
+.big-ben{
+  flex-grow: 1;
 }
-
-.red {
-  background-color: #FF0000;
-  order: 1;
-}
-
-.orange {
-  background-color: #FFA500;
-  order: 2;
-}
-
-.violet {
-  background-color: #EE82EE;
-  order: 7;
-}
-
-.yellow {
-  background-color: #FFFF00;
-  order: 3;
+.family {
+  background-color: #00FFFF;
+  height: 70px;
+  margin: 10px;
+  font-size: 16px;
 }
 /*
+----------TASK 8.2------------
 ----------TASK 8.1------------
+    .container {
+      display: flex;
+    }
+    
+    .box {
+      width: 200px;
+      height: 200px;
+    }
+    
+    .blue {
+      background-color: #0000FF;
+      order: 5;
+    }
+    
+    .green {
+      background-color: #008000;
+      order: 4;
+    }
+    
+    .indigo {
+      background-color: #4B0082;
+      order: 6;
+    }
+    
+    .red {
+      background-color: #FF0000;
+      order: 1;
+    }
+    
+    .orange {
+      background-color: #FFA500;
+      order: 2;
+    }
+    
+    .violet {
+      background-color: #EE82EE;
+      order: 7;
+    }
+    
+    .yellow {
+      background-color: #FFFF00;
+      order: 3;
+    }
     .container {
       display: flex;
     }
