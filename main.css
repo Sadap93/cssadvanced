@@ -46,6 +46,7 @@ table {
   background-color: grey;
   width: wrap;
   display: flex;
+  flex-direction: column;
 }
 
 .item {
