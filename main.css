@@ -45,7 +45,7 @@ table {
 .container {
   background-color: lightgrey;
   display: flex;
-  flex-wrap: wrap;
+  flex-flow: row-reverse wrap;
 }
 
 .box {
