@@ -43,65 +43,145 @@ table {
 }
 /*------------------------------------------------*/
 .container {
-  width: 600px;
-  height: 300px;
   display: flex;
-  flex-wrap: wrap;
 }
-.first-container{
-  align-content: center;
-}
-.second-container{
-  align-content: space-between;
-}
-.third-container{
-  align-content: space-around;
-}
-.fourth-container{
-  align-content: flex-end;
-}
+
 .box {
-  height: 50px;
-  width: wrap;
-  margin: 10px;
-  font-size: 25px;
-  line-height: 50px;  
+  width: 200px;
+  height: 200px;
 }
 
-.yellow-box {
+.blue {
+  background-color: #0000FF;
+  order: 5;
+}
+
+.green {
+  background-color: #008000;
+  order: 4;
+}
+
+.indigo {
+  background-color: #4B0082;
+  order: 6;
+}
+
+.red {
+  background-color: #FF0000;
+  order: 1;
+}
+
+.orange {
+  background-color: #FFA500;
+  order: 2;
+}
+
+.violet {
+  background-color: #EE82EE;
+  order: 7;
+}
+
+.yellow {
   background-color: #FFFF00;
-}
-
-.green-box {
-  background-color: #7CFC00;
-}
-
-.pink-box {
-  background-color: #FFC0CB;
-}
-
-.blue-box {
-  background-color: #00FFFF;
-}
-
-
-.first-container {
-  background-color: #D3D3D3;
-}
-
-.second-container {
-  background-color: #F0F8FF;
-}
-
-.third-container {
-  background-color: #A9A9A9;
-}
-
-.fourth-container {
-  background-color: #F5F5DC;
+  order: 3;
 }
 /*
+----------TASK 8.1------------
+    .container {
+      display: flex;
+    }
+    
+    .box {
+      width: 200px;
+      height: 200px;
+    }
+    
+    .blue {
+      background-color: #0000FF;
+    }
+    
+    .green {
+      background-color: #008000;
+    }
+    
+    .indigo {
+      background-color: #4B0082;
+    }
+    
+    .red {
+      background-color: #FF0000;
+    }
+    
+    .orange {
+      background-color: #FFA500;
+    }
+    
+    .violet {
+      background-color: #EE82EE;
+    }
+    
+    .yellow {
+      background-color: #FFFF00;
+    }
 ----------TASK 7.7------------
+    .container {
+      width: 600px;
+      height: 300px;
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .first-container{
+      align-content: center;
+    }
+    .second-container{
+      align-content: space-between;
+    }
+    .third-container{
+      align-content: space-around;
+    }
+    .fourth-container{
+      align-content: flex-end;
+    }
+    .box {
+      height: 50px;
+      width: wrap;
+      margin: 10px;
+      font-size: 25px;
+      line-height: 50px;  
+    }
+    
+    .yellow-box {
+      background-color: #FFFF00;
+    }
+    
+    .green-box {
+      background-color: #7CFC00;
+    }
+    
+    .pink-box {
+      background-color: #FFC0CB;
+    }
+    
+    .blue-box {
+      background-color: #00FFFF;
+    }
+    
+    
+    .first-container {
+      background-color: #D3D3D3;
+    }
+    
+    .second-container {
+      background-color: #F0F8FF;
+    }
+    
+    .third-container {
+      background-color: #A9A9A9;
+    }
+    
+    .fourth-container {
+      background-color: #F5F5DC;
+    }
 ----------TASK 7.6------------
     .container {
       display: flex;
