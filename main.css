@@ -1,19 +1,50 @@
-.title {
-  font-size: 4em;
-  font-weight: bold;
-  color: white;
+body {
   font-family: 'Noto Sans', sans-serif;
-}
-.container {
-  background: url('assets/background-sw.jpg') no-repeat center;
   height: 100vh;
-  width: 100vw;
+}
+.container{
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
+}
+.title {
+  display: block;
+  margin: 0.67em 0 0.67em 0;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.site-content {
+  display: block;
+  margin: 1em 0 1em 0;
+  padding: 20px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 40px;
+  flex-grow: 1;
+}
+
+.footer {
+  padding: 20px;
+  background-color: pink;
+  font-size: 30px;
+  
 }
 /*
+----------TASK 9.2------------
 ----------TASK 9.1------------
+    .title {
+      font-size: 4em;
+      font-weight: bold;
+      color: white;
+      font-family: 'Noto Sans', sans-serif;
+    }
+    .container {
+      background: url('assets/background-sw.jpg') no-repeat center;
+      height: 100vh;
+      width: 100vw;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
 ----------TASK 8.3------------
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
