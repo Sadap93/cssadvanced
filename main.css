@@ -43,29 +43,58 @@ table {
 }
 /*------------------------------------------------*/
 .container {
-  background-color: #F5F5DC;
   display: flex;
+  height: 400px;
+  width: 900px;
+  background-color: #D3D3D3;
 }
-.regular{
-  flex-grow: 1;
+.first-box{
+  align-self: flex-start;
 }
-.other-regular{
-  flex-grow: 1;
+.second-box{
+  align-self: center;
 }
-.tiny{
-  flex-grow: 3;
+.third-box{
+  align-self: flex-end;
 }
-.big-ben{
-  flex-grow: 1;
+.fourth-box{
+  align-self: baseline;
 }
-.family {
-  background-color: #00FFFF;
-  height: 70px;
+.fifth-box{
+  align-self: stretch;
+}
+
+.box {
+  background-color: #ADD8E6;
+  width: wrap;
   margin: 10px;
-  font-size: 16px;
+  font-size: 30px;
 }
 /*
+----------TASK 8.3------------
 ----------TASK 8.2------------
+    .container {
+      background-color: #F5F5DC;
+      display: flex;
+    }
+    .regular{
+      flex-grow: 1;
+    }
+    .other-regular{
+      flex-grow: 1;
+    }
+    .tiny{
+      flex-grow: 3;
+    }
+    .big-ben{
+      flex-grow: 1;
+    }
+    .family {
+      background-color: #00FFFF;
+      height: 70px;
+      margin: 10px;
+      font-size: 16px;
+    }
 ----------TASK 8.1------------
     .container {
       display: flex;
