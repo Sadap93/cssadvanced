@@ -43,70 +43,118 @@ table {
 }
 /*------------------------------------------------*/
 .container {
-	display: grid;
-	grid-template-areas: 
-  "header header header"
-  "menu main side"
-	"footer footer footer";
-	grid-template-columns: 150px 1fr 150px;
-  grid-template-rows: auto 1fr auto;
-  gap: 10px;
-  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 50px 50px 300px;
+  column-gap: 10px;
+}
+.free, .basic, .premium{
+  background-color: lightgray;
+  text-align: center;
+  padding: 20px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 
-@media (max-width: 768px) {
-	.container {
-		grid-template-areas: 
-    "header"
-		"menu"
-		"main"
-		"side"
-		"footer";
-		grid-template-columns: 100%;
-		grid-template-rows: 100px 50px 1fr 50px 70px;
-	}
+.free-value, .basic-value, .premium-value{
+  background-color: red;
+  color: white;
+  text-align: center;
+  padding: 20px;
 }
-
-.header {
-	background-color: greenyellow;
-	font-size: 2rem;
-	text-align: center;
-}
-
-.main {
-  background-color: lightblue;
+.features{
+  background-color: lightgray;
+  padding: 20px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
   text-align: center;
 }
 
-.menu,
-.side {
-	background-color: gray;
-  color: #ffffff;
-}
-
-.footer {
-	background-color:#000000;
-	color: #ffffff;
-	font-size: 2rem;
+p{
   text-align: center;
+  padding: 10px;
+  padding-bottom: 25px;
 }
 
-.header,
-.main,
-.menu,
-.side,
-.footer {
-	padding: 15px;
+a{
+  border-radius: 40px;
+  background-color: darkblue;
+  color: white;
+  padding: 5px 45px 5px 45px;
+  font-weight: 700;
+  text-decoration: none; 
 }
-
-.header { grid-area: header; }
-.main { grid-area: main; }
-.menu { grid-area: menu; }
-.side { grid-area: side; }
-.footer { grid-area: footer; }
-
+ul{
+  padding: 10px;
+  padding-left: 30px;
+  padding-top: 25px;
+  text-align: left;
+}
 /*
+----------TASK 5.3------------
 ----------TASK 5.2------------
+    .container {
+      display: grid;
+      grid-template-areas: 
+      "header header header"
+      "menu main side"
+      "footer footer footer";
+      grid-template-columns: 150px 1fr 150px;
+      grid-template-rows: auto 1fr auto;
+      gap: 10px;
+      height: 100vh;
+    }
+    
+    @media (max-width: 768px) {
+      .container {
+        grid-template-areas: 
+        "header"
+        "menu"
+        "main"
+        "side"
+        "footer";
+        grid-template-columns: 100%;
+        grid-template-rows: 100px 50px 1fr 50px 70px;
+      }
+    }
+    
+    .header {
+      background-color: greenyellow;
+      font-size: 2rem;
+      text-align: center;
+    }
+    
+    .main {
+      background-color: lightblue;
+      text-align: center;
+    }
+    
+    .menu,
+    .side {
+      background-color: gray;
+      color: #ffffff;
+    }
+    
+    .footer {
+      background-color:#000000;
+      color: #ffffff;
+      font-size: 2rem;
+      text-align: center;
+    }
+    
+    .header,
+    .main,
+    .menu,
+    .side,
+    .footer {
+      padding: 15px;
+    }
+    
+    .header { grid-area: header; }
+    .main { grid-area: main; }
+    .menu { grid-area: menu; }
+    .side { grid-area: side; }
+    .footer { grid-area: footer; }
 ----------TASK 5.1------------
     .container {
       display: grid;
