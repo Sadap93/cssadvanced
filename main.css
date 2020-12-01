@@ -43,55 +43,68 @@ table {
 }
 /*------------------------------------------------*/
 .container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 50px 50px 300px;
-  column-gap: 10px;
-}
-.free, .basic, .premium{
-  background-color: lightgray;
-  text-align: center;
-  padding: 20px;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
+  background-color: grey;
+  width: wrap;
+  display: flex;
 }
 
-.free-value, .basic-value, .premium-value{
+.item {
   background-color: red;
-  color: white;
-  text-align: center;
-  padding: 20px;
-}
-.features{
-  background-color: lightgray;
-  padding: 20px;
-  border-bottom-right-radius: 10px;
-  border-bottom-left-radius: 10px;
-  text-align: center;
-}
-
-p{
-  text-align: center;
-  padding: 10px;
-  padding-bottom: 25px;
-}
-
-a{
-  border-radius: 40px;
-  background-color: darkblue;
-  color: white;
-  padding: 5px 45px 5px 45px;
-  font-weight: 700;
-  text-decoration: none; 
-}
-ul{
-  padding: 10px;
-  padding-left: 30px;
-  padding-top: 25px;
-  text-align: left;
+  width: 150px;
+  margin: 10px;
+  font-size: 25px;
 }
 /*
+----------TASK 7.1------------
 ----------TASK 5.3------------
+    .container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: 50px 50px 300px;
+      column-gap: 10px;
+    }
+    .free, .basic, .premium{
+      background-color: lightgray;
+      text-align: center;
+      padding: 20px;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+    }
+    
+    .free-value, .basic-value, .premium-value{
+      background-color: red;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+    .features{
+      background-color: lightgray;
+      padding: 20px;
+      border-bottom-right-radius: 10px;
+      border-bottom-left-radius: 10px;
+      text-align: center;
+    }
+    
+    p{
+      text-align: center;
+      padding: 10px;
+      padding-bottom: 25px;
+    }
+    
+    a{
+      border-radius: 40px;
+      background-color: darkblue;
+      color: white;
+      padding: 5px 45px 5px 45px;
+      font-weight: 700;
+      text-decoration: none; 
+    }
+    ul{
+      padding: 10px;
+      padding-left: 30px;
+      padding-top: 25px;
+      text-align: left;
+    }
 ----------TASK 5.2------------
     .container {
       display: grid;
