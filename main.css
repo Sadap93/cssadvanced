@@ -1,32 +1,45 @@
 div {
-  display: inline-block;
-  width: 75px;
-  height: 150px;
-  border-radius: 50% 50% 0% 0%;
+  position: absolute;
+  width: 40px;
+  height: 40px;
   background-color: red;
-  animation: hearthbeat .5s  ease-out .5s infinite reverse backwards;
-  /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+  border-radius: 50%;
+  animation: bounce 1s ease-in .1s 5 alternate both;
 }
-
-#left {
-  position: relative;
-  left: 20px;
-  transform: rotate(-45deg);
-}
-
-#right {
-  position: relative;
-  left: -5px;
-  transform: rotate(45deg);
-}
-
-@keyframes hearthbeat {
-  from {width: 80px; height: 163px;}
-  75% {width: 75px; height: 150px;}
-  to {width: 80px; height: 163px;}
+@keyframes bounce{
+  from {left: 10%; bottom: 70%;}
+  to {left: 10%; bottom: 0%;}
 }
 /*
+----------TASK 13.10------------
 ----------TASK 13.1------------
+    div {
+      display: inline-block;
+      width: 75px;
+      height: 150px;
+      border-radius: 50% 50% 0% 0%;
+      background-color: red;
+      animation: hearthbeat .5s  ease-out .5s infinite reverse backwards;
+      /* animation: name duration timing-function delay iteration-count direction fill-mode; *//*
+    }
+    
+    #left {
+      position: relative;
+      left: 20px;
+      transform: rotate(-45deg);
+    }
+    
+    #right {
+      position: relative;
+      left: -5px;
+      transform: rotate(45deg);
+    }
+    
+    @keyframes hearthbeat {
+      from {width: 80px; height: 163px;}
+      75% {width: 75px; height: 150px;}
+      to {width: 80px; height: 163px;}
+    }
 ----------TASK 12.2------------
     * {
       margin: 0;
