@@ -1,32 +1,52 @@
 div {
   display: inline-block;
-  padding: 10px;
-  text-align: center;
-  vertical-align: top;
-}
-
-.player {
   width: 75px;
-  height: 75px;
-  background-color: yellow;
-  border-radius: 10%;
-}
-
-#ball, #kid2 {
-  position: relative;
-  left: 75px;
-  top: 100px;
-}
-
-#ball {
-  width: 20px;
-  height: 20px;
+  height: 150px;
+  border-radius: 50% 50% 0% 0%;
   background-color: red;
-  border-radius: 50%;
-  transform: translate(-75px, -100px);
+}
+
+#left {
+  position: relative;
+  left: 20px;
+  transform: rotate(-45deg);
+}
+
+#right {
+  position: relative;
+  left: -5px;
+  transform: rotate(45deg);
 }
 /*
+----------TASK 10.4------------
 ----------TASK 10.3------------
+    div {
+      display: inline-block;
+      padding: 10px;
+      text-align: center;
+      vertical-align: top;
+    }
+    
+    .player {
+      width: 75px;
+      height: 75px;
+      background-color: yellow;
+      border-radius: 10%;
+    }
+    
+    #ball, #kid2 {
+      position: relative;
+      left: 75px;
+      top: 100px;
+    }
+    
+    #ball {
+      width: 20px;
+      height: 20px;
+      background-color: red;
+      border-radius: 50%;
+      transform: translate(-75px, -100px);
+    }
 ----------TASK 9.3------------
     .media-object {
       max-width: 600px;
