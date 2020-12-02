@@ -4,7 +4,7 @@ div {
   height: 150px;
   border-radius: 50% 50% 0% 0%;
   background-color: red;
-  animation: hearthbeat .5s  ease-out .5s infinite reverse;
+  animation: hearthbeat .5s  ease-out .5s infinite reverse backwards;
   /* animation: name duration timing-function delay iteration-count direction fill-mode; */
 }
 
