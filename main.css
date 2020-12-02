@@ -1,41 +1,68 @@
-* {
-  margin: 0;
-  padding: 0;
-  border: 0;
-}
-
-input, label {
-  font-family: "Lucida Console", Courier, monospace;
-  font-size: 16px;
-}
-
-input {
-  width: 200px;
-  height: 30px;
-  margin: 25px;
-  border-bottom: 1px solid grey;
-}
-
-label {
+div {
   display: inline-block;
+  width: 75px;
+  height: 150px;
+  border-radius: 50% 50% 0% 0%;
+  background-color: red;
+  animation: hearthbeat .5s infinite;
+}
+
+#left {
   position: relative;
-  left: -230px;
-  cursor: text;
-  transition-duration: 0.5s;
-  transform-origin: 0% 100%;
+  left: 20px;
+  transform: rotate(-45deg);
 }
 
-
-input:focus {
-  outline: 0;
+#right {
+  position: relative;
+  left: -5px;
+  transform: rotate(45deg);
 }
 
-input:focus ~ label, input:valid ~ label{
-  transform: matrix(0.8, 0, 0, 0.8, 0, -25);
-
+@keyframes hearthbeat {
+  from {width: 80px; height: 163px;}
+  75% {width: 75px; height: 150px;}
+  to {width: 80px; height: 163px;}
 }
 /*
+----------TASK 13.1------------
 ----------TASK 12.2------------
+    * {
+      margin: 0;
+      padding: 0;
+      border: 0;
+    }
+    
+    input, label {
+      font-family: "Lucida Console", Courier, monospace;
+      font-size: 16px;
+    }
+    
+    input {
+      width: 200px;
+      height: 30px;
+      margin: 25px;
+      border-bottom: 1px solid grey;
+    }
+    
+    label {
+      display: inline-block;
+      position: relative;
+      left: -230px;
+      cursor: text;
+      transition-duration: 0.5s;
+      transform-origin: 0% 100%;
+    }
+    
+    
+    input:focus {
+      outline: 0;
+    }
+    
+    input:focus ~ label, input:valid ~ label{
+      transform: matrix(0.8, 0, 0, 0.8, 0, -25);
+    
+    }
 ----------TASK 11.3------------
     div {
       display: inline-block;
