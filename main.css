@@ -1,36 +1,72 @@
-div {
-  display: inline-block;
-  margin: 20px 5px 20px 5px;
-  padding: 5px;
-  width: 135px;
-  height: 400px;
-  vertical-align: top;
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+input, label {
   font-family: "Lucida Console", Courier, monospace;
-  cursor: default;
-  background-color: khaki;
-  transition: all 0.5s ease-out .1s;
+  font-size: 16px;
 }
 
-img {
-  height: 200px;
+input {
+  width: 200px;
+  height: 30px;
+  margin: 25px;
+  border-bottom: 1px solid grey;
 }
 
-h1, p {
-  font-size: 12px;
+label {
+  display: inline-block;
+  position: relative;
+  left: -230px;
+  cursor: text;
+  transition-duration: 0.5s;
+  transform-origin: 0% 100%;
 }
 
-h1 {
-  font-weight: bold;
+
+input:focus {
+  outline: 0;
 }
 
-div:hover{
-  box-shadow: 3px 6px 3px 0 grey;
-  transform: scale(1.1);
-}
+input:focus ~ label, input:valid ~ label{
+  transform: matrix(0.8, 0, 0, 0.8, 0, -25);
 
+}
 /*
+----------TASK 12.2------------
 ----------TASK 11.3------------
+    div {
+      display: inline-block;
+      margin: 20px 5px 20px 5px;
+      padding: 5px;
+      width: 135px;
+      height: 400px;
+      vertical-align: top;
+      text-align: center;
+      font-family: "Lucida Console", Courier, monospace;
+      cursor: default;
+      background-color: khaki;
+      transition: all 0.5s ease-out .1s;
+    }
+    
+    img {
+      height: 200px;
+    }
+    
+    h1, p {
+      font-size: 12px;
+    }
+    
+    h1 {
+      font-weight: bold;
+    }
+    
+    div:hover{
+      box-shadow: 3px 6px 3px 0 grey;
+      transform: scale(1.1);
+    }
     body {
       background-color: salmon;
     }
