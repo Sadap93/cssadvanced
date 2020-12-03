@@ -5,21 +5,45 @@
   background-color: #ccc;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
 }
 
 .box {
-  width: min(75%, 600px);
-  background-color: hotpink;
+  background-color: white;
+  width: 600px;
   height: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 30px;
+}
+
+.second-header {
+  font-size: max(24px, 3vw);
 }
 /*
+-------------TASK 14.5-------------
 ----------TASK 14.4------------
+    .wrapper {
+      margin: auto;
+      width: 90vw;
+      height: 100vh;
+      background-color: #ccc;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .box {
+      width: min(600px, 75vw);
+      background-color: hotpink;
+      height: 100px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 30px;
+    }
 ----------TASK 14.3------------
     .container {
       height: 100vh;
