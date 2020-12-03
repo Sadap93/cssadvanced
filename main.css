@@ -1,30 +1,62 @@
-.wrapper {
-  margin: auto;
-  width: 90vw;
+.page {
   height: 100vh;
-  background-color: #ccc;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
+  width: 75vw;
+  margin: auto;
+  color: rgba(33, 33, 33, 1);
 }
 
-.box {
-  background-color: white;
-  width: fit-content;
-  height: fit-content;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.page:before {
+  filter: blur(15px);
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+
+  background-image: url(https://images.unsplash.com/photo-1517916062899-26cae9af8553?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ);
+  background-size: cover;
 }
 
-p {
-  font-size: clamp(13px, 3vw, 18px);
+.page h1 {
+  background: rgba(255, 255, 255, 0.5);
+  max-width: fit-content;
+  margin: auto;
+  padding: 10px 20px;
+}
+
+.page p {
+  background: rgba(255, 255, 255, 0.5);
 }
 
 
 /*
+-------------TASK 14.8-------------
 -------------TASK 14.6-------------
+    .wrapper {
+      margin: auto;
+      width: 90vw;
+      height: 100vh;
+      background-color: #ccc;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+    }
+    
+    .box {
+      background-color: white;
+      width: fit-content;
+      height: fit-content;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    p {
+      font-size: clamp(13px, 3vw, 18px);
+    }
 -------------TASK 14.5-------------
     .wrapper {
       margin: auto;
