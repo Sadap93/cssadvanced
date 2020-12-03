@@ -1,17 +1,77 @@
-div {
-  position: absolute;
-  width: 40px;
-  height: 40px;
-  background-color: red;
-  border-radius: 50%;
-  animation: bounce 1s ease-in .1s 5 alternate both;
+:root{
+  --primary-color: rgba(229, 57, 53, 0.3);
+  --secondary-color: rgba(158, 158, 158, 0.35);
+  --font-color: rgba(33, 33, 33, 1);
 }
-@keyframes bounce{
-  from {left: 10%; bottom: 70%;}
-  to {left: 10%; bottom: 0%;}
+
+.wrapper {
+  height: 100vh;
+  width: 80vw;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 1fr 5fr 1fr;
+  gap: 5px;
+}
+
+.header {
+  grid-column: 2 / -1;
+  grid-row: 1 / span 1;
+  color: var(--font-color);
+  background-color: var(--primary-color);
+  text-align: center;
+}
+
+.sidebar {
+  grid-column: 1;
+  grid-row: 2 / span 1;
+  background-color: var(--secondary-color);
+}
+
+.content {
+  grid-column: 2 / -1;
+  grid-row: 2 / span 1;
+  background-color: var(--secondary-color);
+}
+
+.footer {
+  grid-column: 1 / -1;
+  grid-row: 3 / span 1;
+  color: var(--font-color);
+  background-color: var(--primary-color);
+  text-align: center;
+}
+
+.content h2 {
+  text-align: center;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  max-width: 200px;
+  margin: 25px;
+  color: var(--font-color);
+}
+
+.content p {
+  margin: 25px;
+  color: var(--font-color);
 }
 /*
-----------TASK 13.10------------
+----------TASK 14.1------------
+    div {
+      position: absolute;
+      width: 40px;
+      height: 40px;
+      background-color: red;
+      border-radius: 50%;
+      animation: bounce 1s ease-in .1s 5 alternate both;
+    }
+    @keyframes bounce{
+      from {left: 10%; bottom: 70%;}
+      to {left: 10%; bottom: 0%;}
+    }
 ----------TASK 13.1------------
     div {
       display: inline-block;
