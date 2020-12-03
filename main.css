@@ -1,20 +1,41 @@
-.container {
+.wrapper {
+  margin: auto;
+  width: 90vw;
   height: 100vh;
-  width: 100vw;
-  background-color: gray;
-  position: absolute;
+  background-color: #ccc;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.floater {
-  height: 50px;
-  width: 50px;
-  background-color: gold;
-  position: relative;
-  top: calc(100% - 60px);
-  left: calc(100% - 60px);
+.box {
+  width: min(75%, 600px);
+  background-color: hotpink;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
 }
 /*
+----------TASK 14.4------------
 ----------TASK 14.3------------
+    .container {
+      height: 100vh;
+      width: 100vw;
+      background-color: gray;
+      position: absolute;
+    }
+    
+    .floater {
+      height: 50px;
+      width: 50px;
+      background-color: gold;
+      position: relative;
+      top: calc(100% - 60px);
+      left: calc(100% - 60px);
+    }
 ----------TASK 14.1------------
     :root{
       --primary-color: rgba(229, 57, 53, 0.3);
