@@ -1,9 +1,36 @@
+/* Block component */
+.button {
+  display:       inline-block;
+  border-radius: 5px;
+  margin:        10px;
+  padding:       10px 5px;
+}
 
-.gray{
-  filter: grayscale(75%);
-  }
+/* Element component */
+.button__text{
+color: lightgrey;
+font-size: 18px;
+}
+
+/* Modifier components */
+.button--sign-up{
+font-size: 80px;
+color: white;
+background-color:green;
+}
+
+.button--unsubscribe{
+font-size: 10px;
+color: pink;
+background-color: red;
+}
+
 /*
+-------------TASK 17.5-------------
 -------------TASK 14.9-------------
+    .gray{
+      filter: grayscale(75%);
+      }
 -------------TASK 14.8-------------
     .page {
       height: 100vh;
