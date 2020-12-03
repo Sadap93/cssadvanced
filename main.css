@@ -11,18 +11,44 @@
 
 .box {
   background-color: white;
-  width: 600px;
-  height: 100px;
+  width: fit-content;
+  height: fit-content;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.second-header {
-  font-size: max(24px, 3vw);
+p {
+  font-size: clamp(13px, 3vw, 18px);
 }
+
+
 /*
+-------------TASK 14.6-------------
 -------------TASK 14.5-------------
+    .wrapper {
+      margin: auto;
+      width: 90vw;
+      height: 100vh;
+      background-color: #ccc;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+    }
+    
+    .box {
+      background-color: white;
+      width: 600px;
+      height: 100px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .second-header {
+      font-size: max(24px, 3vw);
+    }
 ----------TASK 14.4------------
     .wrapper {
       margin: auto;
